@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Pacifico&family=Poppins:wght@200;300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: white; */
+    background: linear-gradient(to bottom,rgb(123, 210, 232),transparent);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+#navbar{
+    position: absolute;
+    padding: 10px 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 23px;
+    /* text-decoration: none; */
+    color: rgb(32, 88, 98);
+    
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    /* margin-left: 23px; */
+    /* padding-left: 17px;
+    margin-right: 30px; */
+    padding: 0 16px;
+    z-index: 2000;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(20, 55, 61);
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#navbar ul li :hover{
+    background-color: rgb(32, 88, 98);
+    color: white;
+}
+
+.images{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,rgb(43, 112, 129),transparent);
+    z-index: 2300;
+}
+
+.images #text{
+    position: absolute;
+    color:rgb(39, 106, 117);
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    z-index: 900;
+    font-weight: bold;
+    transform: translateY(56px);
+}
+
+.images #text #adventure{
+    text-align: center;
+    font-size: 101px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+.images img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1500;
+}
+
+.paragraph{
+    background: linear-gradient(to bottom,rgb(43, 112, 129),transparent);
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+    text-align: center;
+}
+
+
+.paragraph h2{
+    padding-bottom: 16px;
+    transform: translateY(-12px);
+    text-align: center;
+    font-size: 40px;
+    /* letter-spacing: 0.5rem; */
+    /* text-transform: uppercase; */
+    /* font-family: 'Combo', cursive; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 16px 40px;
+
+}
+
+
+.footer{
+    padding-top: 20px;
+    opacity: 0.7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
