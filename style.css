@@ -75,7 +75,7 @@ body {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, rgb(43, 112, 129), transparent);
-  z-index: 2300;
+  z-index: 1800;
 }
 
 .images #text {
@@ -109,14 +109,13 @@ body {
 .images #bird1 {
   left: -4%;
   top: 0%;
-  /* width: auto; */
-  /* width: fit-content; */
+  /* width: 1rem; */
 }
 .images #bird2 {
   right: 0%;
   top: 10%;
-  /* width: auto; */
-  /* width: fit-content; */
+  /* width: 1rem; */
+
 }
 
 .paragraph {
@@ -166,6 +165,16 @@ footer {
     #toggle {
         display: none;
       }
+
+    /* #images #bird1{
+      display: none;
+    }
+
+    #images #bird2{
+      display: none;
+    } */
+
+
       
       /**
         Hamburger
@@ -179,7 +188,12 @@ footer {
         margin-top: -45px;
         width: 2em;
         height: 45px;
-        z-index: 5;
+        z-index: 2001;
+      }
+
+      #logo{
+        /* text-align: left; */
+        float: left;
       }
       
       .hamburger div {
@@ -196,15 +210,17 @@ footer {
       Nav Styles
       **/
       .nav {
+        z-index: 2000;
         display: block;
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #090E6B;
+        background-color: rgb(37, 109, 108);
         top: -100%; left: 0; right: 0; bottom: 0;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
         transform: scale(0);
+        overflow-y: hidden;
       }
       .nav-wrapper {
         position: relative;
