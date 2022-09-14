@@ -1,154 +1,265 @@
-@import url('https://fonts.googleapis.com/css2?family=Combo&family=Pacifico&family=Poppins:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Pacifico&family=Poppins:wght@200;300;400&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(to bottom,rgb(123, 210, 232),transparent);
-    overflow-x: hidden;
-    min-height: 100vh;
+body {
+  background: linear-gradient(to bottom, rgb(123, 210, 232), transparent);
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* z-index: 2500; */
 }
 
-#navbar{
-    position: absolute;
-    padding: 10px 4rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#navbar {
+  position: absolute;
+  padding: 10px 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#logo{
-    font-family: 'Pacifico', cursive;
-    font-size: 23px;
-    color: rgb(32, 88, 98);
-    
+#logo {
+  font-family: "Pacifico", cursive;
+  font-size: 23px;
+  color: rgb(32, 88, 98);
 }
 
-#navbar ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar ul li {
-    list-style-type: none;
-    padding: 0 16px;
-    z-index: 2000;
-
+  list-style-type: none;
+  padding: 0 16px;
+  z-index: 2000;
 }
 
-#navbar ul li a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    color:rgb(20, 55, 61);
-    font-weight: 400;
-    padding: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s all ease-in-out;
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(20, 55, 61);
+  font-weight: 400;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 
-
-#navbar ul li :hover{
-    background-color: rgb(32, 88, 98);
-    transition: .5s all ease-in-out;
-    color: white;
+#navbar ul li :hover {
+  background-color: rgb(32, 88, 98);
+  transition: 0.5s all ease-in-out;
+  color: white;
 }
 
-.images{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.images {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.images::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,rgb(43, 112, 129),transparent);
-    z-index: 2300;
+.images::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgb(43, 112, 129), transparent);
+  z-index: 2300;
 }
 
-.images #text{
-    position: absolute;
-    color:rgb(39, 106, 117);
-    font-family: sans-serif;
-    font-weight: 100;
-    text-align: center;
-    z-index: 900;
-    font-weight: bold;
-    padding-top: 1.5rem;
-    top: 55%;
+.images #text {
+  position: absolute;
+  color: rgb(39, 106, 117);
+  font-family: sans-serif;
+  font-weight: 100;
+  text-align: center;
+  z-index: 900;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  top: 55%;
 }
 
-.images #text #adventure{
-    text-align: center;
-    font-size: 101px;
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    font-weight: 200;
+.images #text #adventure {
+  text-align: center;
+  font-size: 101px;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-weight: 200;
 }
 
-
-.images img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    z-index: 1500;
+.images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1500;
 }
 
-.images #bird1{
-    left: -4%;
-    top: 0%;
+.images #bird1 {
+  left: -4%;
+  top: 0%;
+  /* width: auto; */
+  /* width: fit-content; */
 }
-.images #bird2{
-    right: 0%;
-    top: 10%;
-}
-
-.paragraph{
-    background: linear-gradient(to bottom,rgb(43, 112, 129),transparent);
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 40px;
-    text-align: center;
+.images #bird2 {
+  right: 0%;
+  top: 10%;
+  /* width: auto; */
+  /* width: fit-content; */
 }
 
-
-.paragraph h2{
-    padding-bottom: 16px;
-    transform: translateY(-12px);
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.paragraph {
+  background: linear-gradient(to bottom, rgb(43, 112, 129), transparent);
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 40px;
+  text-align: center;
 }
 
-
-footer{
-    background: black;
-    color: white;
-    padding: 16px 40px;
-
+.paragraph h2 {
+  padding-bottom: 16px;
+  transform: translateY(-12px);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
+footer {
+  background: black;
+  color: white;
+  padding: 16px 40px;
+}
 
-.footer{
-    padding-top: 20px;
-    opacity: 0.7;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+.footer {
+  padding-top: 20px;
+  opacity: 0.7;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media only screen and (max-width : 850px){
+    #navbar ul li {
+        display: none;
+    }
+
+    
+    #toggle {
+        display: none;
+      }
+      
+      /**
+        Hamburger
+      **/
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 5em;
+        right: 5%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+      }
+      
+      .hamburger div {
+        position: relative;
+        width: 3em;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #f8982b;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      /**
+      Nav Styles
+      **/
+      .nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #090E6B;
+        top: -100%; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+      }
+      .nav-wrapper {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+      }
+      nav {
+        text-align: left;
+        margin-left: 25%;
+      }
+      nav a {
+        position: relative;
+        text-decoration: none;
+        color: #6ecddd;
+        font-size: 2em;
+        display: inline-block;
+        margin-top: 1.25em;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 1px;
+      }
+      nav a:before {
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 0.25em;
+        background-color: white;
+        left: -0.5em;
+        transition: all 0.2s ease-in-out;
+      }
+      nav a:hover {
+        color: white;
+      }
+      nav a:hover:before {
+        height: 100%;
+      }
+      
+      /**
+      Animations
+      **/
+      #toggle:checked + .hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+      }
+      #toggle:checked + .hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+      }
+      #toggle:checked + .hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+      }
+      
+      #toggle:checked + .hamburger + .nav {
+        top: 0;
+        transform: scale(1);
+      }
 }
